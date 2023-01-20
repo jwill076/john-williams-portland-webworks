@@ -1,0 +1,15 @@
+@use './queries' as *;
+
+// GLOBAL VARIABLE DECLARATION
+$pkyb-dark-black: #000000;
+$pkyb-black: #323232;
+$pkyb-silver: #afafaf;
+$pkyb-white: #ffffff;
+$pkyb-burgundy: rgb(125, 0, 25);
+
+// CREATING MY OWN DEFAULT BROWSER SETTINGS
+* {
+    font-family: 'Open Sans', serif;
+    box-sizing: border-box;
+    margin: 0;
+}
