@@ -1,0 +1,95 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.links{
+    margin-bottom: 3.5rem;
+
+    .links__title-container{
+
+        @include tablet{
+            display: flex;
+            justify-content: center;
+        }
+
+        .links__title{
+            color: $rfa-title;
+            font-weight: bold;
+            font-size: 4vw;
+            margin: 1.75rem 0 1.25rem 10vw;
+            border-bottom: 7px solid $rfa-dark-title;
+            width: 77vw;
+            padding-bottom: 0.5rem;
+
+            @include tablet{
+                margin-left: 0;
+                width: 90%;
+                font-size: 2.5vw;
+                margin-bottom: 0.5rem;
+            }
+
+            @include desktop{
+                width: 70%;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .links__flexbox{
+        padding-left: 10vw;
+
+        @include tablet{
+            display: flex;
+            padding-left: 0;
+            justify-content: center;
+            padding: 0 5vw;
+        }
+
+        @include desktop{
+            padding: 0 10vw 0 15vw;
+        }
+
+        .flexbox__container{
+            width: 60vw;
+
+            .container__anchor{
+                cursor: pointer;
+
+                .container__anchor-text{
+                    color: $rfa-search;
+                    font-weight: bold;
+                    font-size: 3vw;
+                    margin: 1rem 0;
+
+                    @include tablet{
+                        font-size: 1.5vw;
+                        width: 29vw;
+                    }
+
+                    @include desktop{
+                        font-size: 1vw;
+                        width: 20vw;
+                    }
+                }
+            }
+
+            .container__anchor2{
+
+                .container__anchor-text{
+                    color: $rfa-search;
+                    font-weight: bold;
+                    font-size: 3vw;
+                    margin-top: 0rem;
+
+                    @include tablet{
+                        font-size: 1.5vw;
+                    }
+
+                    @include desktop{
+                        font-size: 1vw;
+                        width: 20vw;
+                    }
+                }
+            }
+        }
+    }
+}
