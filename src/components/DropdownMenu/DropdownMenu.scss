@@ -1,0 +1,130 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.container2__flexbox{
+    border-bottom: 7px solid $rfa-dark-title;
+    border-top: 3px solid $rfa-info-text;
+
+    @include tablet{
+        display: flex;
+        margin-top: -0.25rem;
+    }
+
+    .container2__flexbox1{
+        background-color: $rfa-info-text;
+        padding: 1rem 2rem;
+
+        @include tablet{
+            padding: 1rem;
+        }
+
+        @include desktop{
+            padding: 1rem 1.5rem;
+        }
+
+        .flexbox1__tabs{
+
+            .tabs__text-container{
+
+                .underline{
+                    border-bottom: 1px solid $rfa-cards-bg;
+                    width: 84vw;
+                    padding-bottom: 0.5rem;
+                    margin-bottom: 0.5rem;
+
+                    @include tablet{
+                        width: 19vw;
+                    }
+
+                    @include desktop{
+                        width: 12vw;
+                    }
+                }
+
+                .tabs__text{
+                    color: $rfa-dark-title;
+                    font-weight: bold;
+                    font-size: 3vw;
+                    text-align: center;
+
+                    @include tablet{
+                        font-size: 1.5vw;
+                    }
+
+                    @include desktop{
+                        font-size: 0.9vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .container2__flexbox2{
+        padding-left: 10vw;
+        padding-top: 1.5rem;
+
+        @include tablet{
+            display: flex;
+            padding-left: 5vw;
+            padding-top: 1rem;
+        }
+
+        @include desktop{
+            width: 70vw;
+            justify-content: space-between;
+        }
+
+        .flexbox2__column{
+
+            .column__info{
+
+                .info__title{
+                    font-family: 'Open Sans', serif;
+                    font-size: 3.5vw;
+                    font-weight: bold;
+                    color: $rfa-title;
+                    margin-bottom: 0.5rem;
+
+                    @include tablet{
+                        font-size: 1.5vw;
+                    }
+
+                    @include desktop{
+                        font-size: 0.9vw;
+                    }
+                }
+
+                .info__underline{
+                    border: 2px solid $rfa-date;
+                    width: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                .info__data{
+                    margin-bottom: 2rem;
+
+                    @include tablet{
+                        width: 22.75vw;
+                    }
+
+                    @include desktop{
+                        width: 17vw;
+                    }
+
+                    .data__text{
+                        font-size: 3vw;
+
+                        @include tablet{
+                            font-size: 1.35vw;
+                            margin: 0.25rem 0;
+                        }
+
+                        @include desktop{
+                            font-size: 0.9vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
