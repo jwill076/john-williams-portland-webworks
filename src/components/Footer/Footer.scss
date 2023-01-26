@@ -1,0 +1,138 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.footer{
+    background-color: $rfa-dark-title;
+    color: $rfa-footer;
+    padding-left: 10vw;
+    padding-bottom: 4rem;
+
+    @include tablet{
+        display: flex;
+        padding-left: 5vw;
+        padding-bottom: 2rem;
+    }
+
+    @include desktop{
+        padding-left: 12vw;
+    }
+
+    .footer__title-logo-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3rem 3rem 0 0;
+
+        @include tablet{
+            display: block;
+            padding-right: 0;
+            width: 40%;
+        }
+
+        .footer__title-container{
+
+            .footer__title{
+                color: $rfa-info-text;
+                font-size: 2.75vw;
+                letter-spacing: 0.5px;
+
+                @include tablet{
+                    font-size: 1.5vw;
+                    width: 30vw;
+                }
+
+                @include desktop{
+                    font-size: 1vw;
+                    width: 20vw;
+                }
+            }
+        }
+
+        .footer__logo-container{
+
+            .footer__logo{
+                width: 20vw;
+                margin-top: -1rem;
+
+                @include tablet{
+                    width: 12vw;
+                    margin-top: 1rem;
+                }
+
+                @include desktop{
+                    width: 8vw;
+                }
+            }
+        }
+    }
+
+    .footer__text-container{
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+
+        @include tablet{
+            margin-top: 2.25rem;
+        }
+
+        .footer__text{
+            margin: 1rem 0;
+            font-size: 2.75vw;
+
+            @include tablet{
+                font-size: 1.25vw;
+                width: 20vw;
+                margin: 0.75rem 0;
+            }
+
+            @include desktop{
+                font-size: 0.9vw;
+            }
+        }
+    }
+
+    .footer__info-container{
+
+        @include tablet{
+            width: 35vw;
+            margin-top: 2rem;
+        }
+
+        .footer__info{
+            margin-top: 2rem;
+
+            @include tablet{
+                margin-top: 1rem;
+            }
+
+            .info__title{
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                margin-bottom: 0.25rem;
+                font-size: 2.2vw;
+
+                @include tablet{
+                    font-size: 1vw;
+                }
+
+                @include desktop{
+                    font-size: 0.7vw;
+                }
+            }
+
+            .info__text-container{
+
+                .info__text{
+                    font-size: 2.75vw;
+
+                    @include tablet{
+                        font-size: 1.25vw;
+                    }
+
+                    @include desktop{
+                        font-size: 0.9vw;
+                    }
+                }
+            }
+        }
+    }
+}
