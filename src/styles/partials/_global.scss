@@ -1,11 +1,18 @@
 @use './queries' as *;
 
 // GLOBAL VARIABLE DECLARATION
-$pkyb-dark-black: #000000;
-$pkyb-black: #323232;
-$pkyb-silver: #afafaf;
-$pkyb-white: #ffffff;
-$pkyb-burgundy: rgb(125, 0, 25);
+$rfa-menu-bg: #3068AD;
+$rfa-title: #225089;
+$rfa-tab-text: #666666;
+$rfa-search: #0074C1;
+$rfa-info-text: #F3F6F9;
+$rfa-cards-bg: #E1E5EA;
+$rfa-dark-title: #1B3A61;
+$rfa-date: #8C6910;
+$rfa-updated: #D2B859;
+$rfa-cancelled: #E9261D;
+$rfa-footer: #93A4BD;
+
 
 // CREATING MY OWN DEFAULT BROWSER SETTINGS
 * {
