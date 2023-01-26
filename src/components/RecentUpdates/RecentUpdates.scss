@@ -1,0 +1,166 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.recent-updates{
+    margin-left: 10vw;
+
+    @include tablet{
+        margin-left: 5vw;
+    }
+
+    .recent-updates__title{
+        color: $rfa-title;
+        font-weight: bold;
+        font-size: 4vw;
+        margin-bottom: 0.75rem;
+        cursor: pointer;
+
+        @include tablet{
+            margin-left: 0;
+            width: 50%;
+            font-size: 2.5vw;
+            margin-bottom: 0.5rem;
+        }
+
+        @include desktop{
+            width: 70%;
+            font-size: 1.5rem;
+        }
+    }
+
+    .recent-updates__underline{
+        border: 2px solid $rfa-date;
+        width: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .recent-updates__container{
+
+        .container__flexbox{
+
+            .flexbox__title-container{
+
+                .flexbox__title-anchor{
+
+                    .flexbox__title{
+                        color: $rfa-search;
+                        font-weight: bold;
+                        font-size: 3vw;
+                        width: 75vw;
+                        margin-bottom: 0.5rem;
+
+                        @include tablet{
+                            font-size: 1.5vw;
+                            width: 37vw;
+                        }
+
+                        @include desktop{
+                            font-size: 1vw;
+                            width: 25vw;
+                        }
+                    }
+                }
+            }
+
+            .flexbox__text-container{
+
+                .flexbox__text{
+                    font-size: 2.5vw;
+                    width: 80vw;
+                    margin-bottom: 0.25rem;
+
+                    @include tablet{
+                        font-size: 1.25vw;
+                        width: 40vw;
+                    }
+
+                    @include desktop{
+                        font-size: 0.85vw;
+                        width: 28vw;
+                    }
+                }
+            }
+
+            .flexbox__status{
+                display: flex;
+                font-size: 2.25vw;
+                margin-bottom: 1.5rem;
+
+                @include tablet{
+                    font-size: 1vw;
+                    margin-top: 0.25rem;
+                }
+
+                @include desktop{
+                    font-size: 0.75vw;
+                }
+
+                .status__date-published-label{
+
+                    .status__date-published-text{
+                        font-weight: bold;
+                    }
+                }
+
+                .status__date-published-container{
+
+                    .status__date-published{
+                        padding: 0 0.5rem 0 0.25rem;
+                    }
+                }
+
+                .status__update-container{
+
+                    .status__update-text{
+                        padding: 0.2rem;
+                        font-size: 1.5vw;
+                        background-color: $rfa-tab-text;
+                        color: $rfa-info-text;
+
+                        @include tablet{
+                            font-size: 1vw;
+                            margin-top: -0.2rem;
+                        }
+
+                        @include desktop{
+                            font-size: 0.75vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .recent-updates__button{
+        background-color: $rfa-search;
+        padding: 2.5vw 3vw 2.5vw 4.5vw;
+        width: 22vw;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        cursor: pointer;
+
+        @include tablet{
+            width: 11vw;
+            padding: 1.75vw 1vw 1.75vw 2vw;
+        }
+
+        @include desktop{
+            width: 8vw;
+            padding: 1vw 1.5vw 1vw 1.75vw;
+        }
+
+        .button__text{
+            color: $rfa-info-text;
+            font-size: 2vw;
+            letter-spacing: 0.1rem;
+
+            @include tablet{
+                font-size: 1vw;
+            }
+
+            @include desktop{
+                font-size: 0.6vw;
+            }
+        }
+    }
+}
