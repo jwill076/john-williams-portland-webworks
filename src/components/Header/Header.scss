@@ -1,0 +1,177 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.header{
+
+    .header__flexbox{
+
+        .flexbox__container1{
+            display: flex;
+
+            @include desktop{
+                width: 94vw;
+                padding-right: 0;
+            }
+
+            .container1__flexbox1{
+                background-color: $rfa-menu-bg;
+                height: 20.25vw;
+                width: 4.25rem;
+                padding: 1.25rem 0.85rem;
+                cursor: pointer;
+
+                @include tablet{
+                    height: 4.5rem;
+                    padding: 0.75rem 0.5rem;
+                    width: 3.2rem;
+                }
+
+                .flexbox1__image-container{
+                    width: 1.8rem;
+                    height: 0.15rem;
+                    background-color: $rfa-info-text;
+                    margin: 0.35rem;
+
+                    @include tablet{
+                        width: 1.5rem;
+                    }
+                }
+
+                .flexbox1__text-container{
+
+                    .flexbox1__text{
+                        color: $rfa-info-text;
+                        margin-left: 0.35rem;
+                        font-size: 0.6rem;
+                        letter-spacing: 0.1rem;
+                        font-family: 'Roboto Condensed', serif;
+
+                        @include tablet{
+                            font-size: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            .container1__flexbox2{
+                width: 90vw;
+                margin-top: 0.25rem;
+
+                @include tablet{
+                    display: flex;
+                    margin-top: 0;
+                    justify-content: space-between;
+                }
+
+                .flexbox2__title-info{
+                    display: flex;
+
+                    .title-info__image-container{
+
+                        .title-info__image{
+                            width: 14vw;
+                            padding: 0.5rem;
+                            margin: 0 0.5rem 0 0.75rem;
+
+                            @include tablet{
+                                width: 4.5rem;
+                            }
+                        }
+                    }
+
+                    .title-info{
+                        margin-top: 0.5rem;
+
+                        @include tablet{
+                            margin-top: 0.75rem;
+                        }
+
+                        .title-info__title{
+                            font-family: 'Roboto Slab', serif;
+                            color: $rfa-title;
+                            font-size: 3.2vw;
+
+                            @include tablet{
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                        .title-info__text{
+                            color: $rfa-title;
+                            font-size: 2.35vw;
+                            font-family: 'Roboto Condensed', serif;
+                            font-style: italic;
+
+                            @include tablet{
+                                font-size: 0.58rem;
+                            }
+                        }
+                    }
+                }
+
+                .flexbox2__nav-bar{
+
+                    .nav-bar__flexbox{
+                        display: flex;
+                        color: $rfa-tab-text;
+                        font-weight: bold;
+                        font-size: 2vw;
+                        justify-content: space-between;
+                        width: 76vw;
+                        margin-left: 1.5rem;
+                        margin-right: 5rem;
+
+                        @include tablet{
+                            width: 17rem;
+                            margin-right: 0.5rem;
+                            margin-top: 2rem;
+                            font-size: 0.55rem;
+                        }
+
+                        @include desktop{
+                            margin-right: -2.5rem;
+                        }
+
+                        .flexbox__text{
+                            cursor: pointer;
+                        }
+
+                        .flexbox__search{
+
+                            .search__icon-container{
+                                border: 1px solid $rfa-search;
+                                padding: 0.25rem 0.5rem;
+                                margin-top: -1rem;
+                                cursor: pointer;
+
+                                @include tablet{
+                                    margin-top: -0.5rem;
+                                }
+
+                                .search__icon{
+                                    width: 3vw;
+
+                                    @include tablet{
+                                        width: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .nav-bar__search-box{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .flexbox__container2{
+            display: none;
+        }
+    }
+}
+
+.show-or-not-to-show{
+    display: flex;
+}
