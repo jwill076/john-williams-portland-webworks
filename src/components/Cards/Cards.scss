@@ -1,0 +1,67 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.cards{
+
+    .cards__background{
+        background-color: $rfa-cards-bg;
+        padding: 1rem;
+        
+        @include tablet{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cards__flexbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cards__container{
+                background-color: $rfa-info-text;
+                padding: 2rem 3rem;
+                margin: 1rem;
+                cursor: pointer;
+
+                @include tablet{
+                    padding: 2rem 2.25rem;
+                }
+
+                .cards__image-container{
+
+                    .cards__image{
+                        width: 14vw;
+                        margin-left: 0.5rem;
+
+                        @include tablet{
+                            width: 7.5vw;
+                            margin-left: 1.5vw;
+                        }
+                    }
+                }
+
+                .cards__title-container{
+                    margin-top: 0.75rem;
+                    width: 16vw;
+
+                    @include tablet{
+                        width: 10vw;
+                    }
+
+                    .cards__title{
+                        font-family: 'Open Sans', serif;
+                        font-size: 2vw;
+                        font-weight: bold;
+                        color: $rfa-title;
+                        text-align: center;
+
+                        @include tablet{
+                            font-size: 1.25vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
